@@ -1,72 +1,108 @@
-/* Add flexbox to the navbars. */
-
-/* Format the size of all images. */
-
-/* Style the font color. */
-
-/* Style the background with a color or image. */
-
-/* Adjust the spacing of your page. */
-
-/* Adjust the positioning of your page.  */
-
-
 * {
     box-sizing: border-box;
-  }
+}
+
+.img{
+  height:100px;
+  overflow:hidden;
+  width: 100px;
+  position: relative;  
+  border-radius: 50%;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+.header{
   
-  body {
-    background-color: #f9d60e;
+  display: flex;
+  justify-content: center;
+}
+.personal-img {
+  display: inline;
+  margin: 0 auto;
+
+  height: auto;
+  width:100% ;
+}
+
+
+body {
+    background-image: url("https://assets.newatlas.com/dims4/default/7564f53/2147483647/strip/true/crop/3840x2160+0+0/resize/2880x1620!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Faa%2F13%2Fa44cde564487acedc27b11eb250e%2Fdepositphotos-86536532-xl-2015.jpg");
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.7); /* Add a subtle overlay */
     padding: 20px;
-    font-family: Arial;
-  }
-  
-  .heading{
-    background-color: #373738;
-    color: #efeff2;
+    font-family: 'Gugi', sans-serif; /* Google Font 'Gugi' */
+    color: #fff; /* Set text color to white for better readability */
+    height: 100vh; /* Make the background image fill the entire screen */
+    margin: 0; /* Remove default margin */
+}
+
+.heading {
+    background-color: #3A4276;
+    color: #FF6F61;
     padding: 1em;
-  }
-  
-  .main {
+}
+
+.main {
     max-width: 1000px;
     margin: auto;
-  }
-  
-  h1 {
-    font-size: 50px;
-    word-break: break-all;
-  }
-  
-  .content {
-    background-color: #272b30;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.content {
+    background-color: #778899;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
     color: white;
-  }
+    border-radius: 15px;
+}
 
-
-  .btn {
+.btn {
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: white;
+    background-color: #FF6F61;
     cursor: pointer;
-    margin-right: 20px;
-  }
-  
-  nav {
-    background-color: #272b30;
-    padding: 10px;
+    margin-right: 15px;
     border-radius: 10px;
-  }
-  
-  footer {
-    background-color: #272b30;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #E64A3A;
+}
+
+nav {
+    background-color: rgba(58, 66, 118, 0.9);
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    /*background-color: rgba(58, 66, 118, 0.9); */
     padding: 20px;
     color: white;
+  text-shadow: 2px 2px #000000;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
     border-radius: 10px;
-  
-  }
-  
+    margin-top: 20px;
+  justify-content: bottom;
+}
+
+.name-header {
+    display: flex;
+    justify-content: center;
+    color: #FF6F61;
+    font-size: 2.5em;
+    opacity: 100%;
+    margin-top: 0;
+}
